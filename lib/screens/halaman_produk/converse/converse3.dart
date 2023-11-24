@@ -442,9 +442,8 @@ class DeskripsiSingkat extends StatelessWidget {
 
 //dibawah adalah kode untuk appbar
 class EditAppBar extends PreferredSize {
-  EditAppBar({Key? key, Widget? child, Size? preferredSize})
+  EditAppBar({super.key, Widget? child, Size? preferredSize})
       : super(
-            key: key,
             child: child ?? Container(),
             preferredSize: preferredSize ??
                 Size.fromHeight(AppBar().preferredSize.height));

@@ -73,7 +73,7 @@ class CustomCard extends StatelessWidget {
 }
 
 class MenuModelProductAdidas extends StatelessWidget {
-  const MenuModelProductAdidas({Key? key}) : super(key: key);
+  const MenuModelProductAdidas({super.key});
   static String routeName = '/menuModelProductAdidas';
 
   @override

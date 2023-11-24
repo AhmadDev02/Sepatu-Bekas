@@ -202,13 +202,13 @@ class CustumCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const CustumCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.chillTitle,
     required this.harga,
     required this.image,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
