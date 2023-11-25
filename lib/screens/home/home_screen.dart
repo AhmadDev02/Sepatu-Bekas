@@ -85,15 +85,10 @@ class CustomCard extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   static String routeName = '/homescreen';
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -103,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
             body: SingleChildScrollView(
               child: Column(
                 children: [
-                  const CarouselImage(),
+                  CarouselImage(),
                   const SizedBox(
                     height: 20,
                   ),

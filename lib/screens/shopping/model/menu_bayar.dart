@@ -1,55 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_saya/screens/shopping/model/model_shopping.dart';
 
-class MenuBayar extends StatefulWidget {
+class MenuBayar extends StatelessWidget {
   const MenuBayar({super.key});
 
   @override
-  State<MenuBayar> createState() => _MenuBayarState();
-}
-
-class _MenuBayarState extends State<MenuBayar> {
-  static List<MenuModelShopping> mainMenuShoppingList = [
-    MenuModelShopping(
-      1,
-      "SUPERSTAR GOLF SHOES",
-      "x 1",
-      "Rp. 2.250.000",
-      "assets/image/adidas/adidas1/1.webp",
-    ),
-    MenuModelShopping(
-      2,
-      "Chuck Taylor All Star",
-      "x 1",
-      "Rp. 999.000",
-      "assets/image/converse/converse1/1.jpg",
-    ),
-    MenuModelShopping(
-      3,
-      "Nike Structure 25",
-      "x 1",
-      "Rp 2,099,000",
-      "assets/image/nike/nike1/1.jpeg",
-    ),
-    MenuModelShopping(
-      4,
-      "Slipstream Xtreme Sneakers",
-      "x 1",
-      "Rp 2.179.000",
-      "assets/image/puma/puma1/1.webp",
-    ),
-    MenuModelShopping(
-      5,
-      "REEBOK CLASSIC LEATHER",
-      "x 1",
-      "Rp. 879.200",
-      "assets/image/reebok/reebok1/1.webp",
-    ),
-  ];
-
-  List<MenuModelShopping> tampilanList = List.from(mainMenuShoppingList);
-  @override
   Widget build(BuildContext context) {
+    List<MenuModelShopping> mainMenuShoppingList = [
+      MenuModelShopping(
+        1,
+        "SUPERSTAR GOLF SHOES",
+        "x 1",
+        "Rp. 2.250.000",
+        "assets/image/adidas/adidas1/1.webp",
+      ),
+      MenuModelShopping(
+        2,
+        "Chuck Taylor All Star",
+        "x 1",
+        "Rp. 999.000",
+        "assets/image/converse/converse1/1.jpg",
+      ),
+      MenuModelShopping(
+        3,
+        "Nike Structure 25",
+        "x 1",
+        "Rp 2,099,000",
+        "assets/image/nike/nike1/1.jpeg",
+      ),
+      MenuModelShopping(
+        4,
+        "Slipstream Xtreme Sneakers",
+        "x 1",
+        "Rp 2.179.000",
+        "assets/image/puma/puma1/1.webp",
+      ),
+      MenuModelShopping(
+        5,
+        "REEBOK CLASSIC LEATHER",
+        "x 1",
+        "Rp. 879.200",
+        "assets/image/reebok/reebok1/1.webp",
+      ),
+    ];
+    List<MenuModelShopping> tampilanList = List.from(mainMenuShoppingList);
+
     return Container(
       height: 500,
       padding: const EdgeInsets.only(top: 20),

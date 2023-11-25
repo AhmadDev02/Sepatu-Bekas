@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project_saya/screens/account/settings/settings.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
-class AccountScreen extends StatefulWidget {
+class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});
 
-  @override
-  State<AccountScreen> createState() => _AccountScreenState();
-}
-
-class _AccountScreenState extends State<AccountScreen> {
   Future<void> refreshData() async {
     await Future.delayed(const Duration(seconds: 2));
   }
